@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+Georgian:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b923dda756.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul id="navigation"></ul>
+                 
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+            <div class="contawner">
+                <div class="registration">
+                    <form method="post" action="action.html" class="reg-form">
+                        <div class="title">
+                           <h2> რეგისტრაცია</h2>
+                        </div>
+                        <div class="input-field icon">
+                            <i class="fas fa-user"></i>
+                              <input type="text" placeholder="სახელი და გვარი" required>
+                          </div>
+                          <div class="input-field icon">
+                            <i class="fas fa-user-shield icon"></i>
+                              <input type="text" placeholder="მომხმარებლის სახელი" required>
+                         </div>
+                          <div class="input-field icon">
+                            <i class="fas fa-envelope"></i>
+                              <input type="email" placeholder="ელექტრონული ფოსტა" required>
+                          </div>
+                        
+                          <div class="input-field icon">
+                            <i class="fas fa-address-card"></i>
+                              <input type="tel" id="tnumber" id="tnumber" placeholder="ტელეფონის ნომერი" value="+995" maxlength="13" required >
+                          </div>
+                          <div class="input-field icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                             <input type="date" id="bdate" id="bdate" placeholder="დაბადების თარიღი">
+                          </div>
+                          <div class="input-field pass icon">
+                            <i class="fa-solid fa-lock"></i>
+                              <input type="password" name="pass" placeholder="პაროლი" required>
+                          </div>
+                          <div class="input-field cpass icon">
+                            <i class="fa-solid fa-user-lock"></i>
+                              <input type="password" name="cpass" placeholder="გაიმეორე პაროლი" required>
+                          </div>
+                        <div class="rules">
+                            <input type="checkbox" name="rules" placeholder="" required>
+                            <label for="rules"> ვეთანხმები <a href="../RFORM/rules/Terms_of_use_&_Conditions.pdf" target="_blank">წესებსა და პირობებს</a>
+                            </label>
+                            
+                        </div>
+                            <input  type="submit"  value="გაგზავნა" class="btn solid">
+                        
+                    </form>
+                  </div>
+                </div>
+    
+
+        <label for="scroll"></label>
+         <progress id="progress"max="100" value="0"></progress>
+
+         <div class="social">
+            <div class="socialitem">
+               <a href="https://facebook.com" target="_blank">  <img src="images/facebook.png" alt="FB logo"></a>
+            </div>
+            <div class="socialitem">
+                <a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" alt="Insta logo"></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p><i class="fa-solid fa-copyright"></i>2022</p> 
+ 
+    </footer>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <script src="js/scripts.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src=" https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+</body>
+</html>

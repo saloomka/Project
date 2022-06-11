@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+Georgian:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b923dda756.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Final Project</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul id="navigation"></ul>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+            <div class="scontainer">
+             <div class="signin">
+                <form class="sign-in-form" method="post">
+                   <h2 class="titletwo">ავტორიზაცია</h2>
+                      <div class="input-fieldtwo">
+                        <i class="fas fa-user" ></i>
+                           <input type="text" placeholder="Username" required>
+             </div>
+             <div class="input-fieldtwo">
+                 <i class="fas fa-lock "></i>
+                    <input type="password" placeholder="password" required>
+                      </div>
+                 <input type="submit" value="login" class="bttn solid">
+                   <p class="social-text">  ან დაიხმარე სოციალური პლატფორმა:</p>
+                 <div class="social-media">
+                        <a href="#" class="social-icon">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                           <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                           <i class="fab fab-linkedin-in"></i>
+                        </a>
+                 </div> 
+            </form>
+                </div>
+    
+        </div>
+        <label for="scroll"></label>
+         <progress id="progress"max="100" value="0"></progress>
+
+         <div class="social">
+            <div class="socialitem">
+               <a href="https://facebook.com" target="_blank">  <img src="images/facebook.png" alt="FB logo"></a>
+            </div>
+            <div class="socialitem">
+                <a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" alt="Insta logo"></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p><i class="fa-solid fa-copyright"></i>2022</p> 
+    </footer>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <script src="js/scripts.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src=" https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+</body>
+</html>
